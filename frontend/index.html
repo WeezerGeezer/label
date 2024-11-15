@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Label Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Price Label Generator</h1>
+        <div class="input-section">
+            <input type="text" id="priceInput" placeholder="Enter price (e.g., $9.99)" required>
+            <button id="generateBtn">Generate Preview</button>
+        </div>
+        
+        <div class="preview-section">
+            <img id="previewImage" style="display: none;">
+            <div id="loading" style="display: none;">Generating...</div>
+            <div id="error" style="display: none;"></div>
+        </div>
+        
+        <button id="downloadPdfBtn" style="display: none;">Download PDF</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
