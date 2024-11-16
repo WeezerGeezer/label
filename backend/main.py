@@ -7,6 +7,7 @@ from reportlab.lib.units import inch
 import io
 from PIL import Image
 from reportlab.lib.utils import ImageReader
+import os
 
 app = Flask(__name__)
 CORS(app)
@@ -101,5 +102,5 @@ def generate_pdf():
         return jsonify({'error': str(e)}), 500
 
 if __name__ == '__main__':
-    print("Starting Flask server...")
-    app.run(host='127.0.0.1', port=8080, debug=True) 
+    port = int(os.getenv('PORT', 8080))
+    app.run(port=port) 

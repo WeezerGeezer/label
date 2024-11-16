@@ -6,7 +6,7 @@ import os
 import PyPDF2
 
 def test_preview():
-    url = "http://127.0.0.1:8080/api/preview"
+    url = "https://label-generator-424740197089.us-central1.run.app/api/preview"
     test_text = "$10.00"
     print(f"\nTesting preview with text: '{test_text}'")
     
@@ -48,14 +48,14 @@ def test_preview():
             print(f"Response: {response.text}")
             return False
     except requests.exceptions.ConnectionError:
-        print("Connection Error: Make sure the Flask server is running on http://127.0.0.1:8080")
+        print("Connection Error: Make sure the Flask server is running on https://label-generator-424740197089.us-central1.run.app")
         return False
     except Exception as e:
         print(f"Error: {str(e)}")
         raise
 
 def test_pdf():
-    url = "http://127.0.0.1:8080/api/generate-pdf"
+    url = "https://label-generator-424740197089.us-central1.run.app/api/generate-pdf"
     test_text = "$10.00"
     print(f"\nTesting PDF generation with text: '{test_text}'")
     
@@ -94,7 +94,7 @@ def test_pdf():
             print(f"Response: {response.text}")
             return False
     except requests.exceptions.ConnectionError:
-        print("Connection Error: Make sure the Flask server is running on http://127.0.0.1:8080")
+        print("Connection Error: Make sure the Flask server is running on https://label-generator-424740197089.us-central1.run.app")
         return False
     except Exception as e:
         print(f"Error: {str(e)}")

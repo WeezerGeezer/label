@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const API_URL = 'http://127.0.0.1:8080/api';
+    const API_URL = 'https://label-generator-xxxxx-xx.a.run.app/api';
     const priceInput = document.getElementById('priceInput');
     const generateBtn = document.getElementById('generateBtn');
     const exportPdfBtn = document.getElementById('exportPdfBtn');

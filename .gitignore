@@ -24,6 +24,7 @@ venv/
 # Test outputs
 test_preview.png
 test_labels.pdf
+test_endpoints.py
 
 # IDE specific files
 .idea/
